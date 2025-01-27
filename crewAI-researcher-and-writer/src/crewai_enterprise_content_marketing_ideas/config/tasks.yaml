@@ -1,0 +1,30 @@
+research_task:
+  description: >
+    Research {topic} thoroughly. Identify key concepts, current developments,
+    and practical implications that make the topic relevant and interesting for
+    a general audience. Focus on collecting easy-to-understand information from
+    credible sources and avoid overly technical or scientific jargon.
+  expected_output: >
+    A summary of 8–10 key points about {topic}, covering:
+    - What it is and why it matters.
+    - Current developments or trends.
+    - Practical applications or examples.
+    - Sources and references for each point.
+  agent: researcher
+
+content_generation_task:
+  description: >
+    Based on the research findings, create an introductory article on {topic} in German.
+    The article should be easy to read, engaging, and neutral in tone. Use
+    subheadings, short paragraphs, and bullet points to organize the content.
+    Use a numbered system for citing sources within the text. The references at the end of the document should follow this format:
+    Template for books and websites: 
+    [x] AUTHOR/ORGANIZATION. Titel. Verfügbar unter: <URL>. Zugriff am: DD.MM.YYYY.
+    [x] NAME, V. Titel. Untertitel. x. Aufl., Erscheinungsort(e): Verlag, JJJJ.
+  expected_output: >
+    A draft of an article that includes:
+    - An engaging introduction that explains the topic.
+    - Clear subheadings for key sections (e.g., "What is {topic}?", "Why does it matter?").
+    - Relatable examples or scenarios where possible.
+    - Reference List.
+  agent: content_generator
