@@ -2,29 +2,43 @@ research_task:
   description: >
     Research {topic} thoroughly. Identify key concepts, current developments,
     and practical implications that make the topic relevant and interesting for
-    a general audience. Focus on collecting easy-to-understand information from
-    credible sources and avoid overly technical or scientific jargon.
+    a general audience. Use credible, up-to-date sources (e.g., academic articles, 
+    reputable websites, industry reports) and summarize them in a factual, 
+    easy-to-understand manner. Avoid overly technical or scientific jargon, 
+    but provide enough detail to support a comprehensive article later on.
+
   expected_output: >
-    A summary of 8–10 key points about {topic}, covering:
+    A concise but detailed summary of 8–10 key points about {topic}, covering:
     - What it is and why it matters.
     - Current developments or trends.
-    - Practical applications or examples.
-    - Sources and references for each point.
+    - Practical applications or real-world examples.
+    - Specific data, facts, or insights that illustrate each point.
+    - At least one credible source or reference per key point, 
+      with a clear link or citation.
+
   agent: researcher
 
 content_generation_task:
   description: >
-    Based on the research findings, create an introductory article on {topic} in German.
-    The article should be easy to read, engaging, and neutral in tone. Use
-    subheadings, short paragraphs, and bullet points to organize the content.
-    Use a numbered system for citing sources within the text. The references at the end of the document should follow this format:
-    Template for books and websites: 
-    [x] AUTHOR/ORGANIZATION. Titel. Verfügbar unter: <URL>. Zugriff am: DD.MM.YYYY.
-    [x] NAME, V. Titel. Untertitel. x. Aufl., Erscheinungsort(e): Verlag, JJJJ.
+    Based on the research findings, create an introductory article on {topic} 
+    in German. The text should be detailed, engaging, and neutral in tone, while
+    remaining accessible for non-experts. Use short paragraphs, bullet points,
+    and clear subheadings to organize the content. Each major statement or data 
+    point from the research should be followed by a bracketed reference (e.g., [1]),
+    corresponding to a numbered list of sources at the end.
+
+    The references at the end of the article should follow this format:
+    - [x] AUTHOR/ORGANIZATION. Titel. Verfügbar unter: <URL>. Zugriff am: DD.MM.YYYY.
+    - [x] NAME, V. Titel. Untertitel. x. Aufl., Erscheinungsort(e): Verlag, JJJJ.
+
   expected_output: >
-    A draft of an article that includes:
-    - An engaging introduction that explains the topic.
-    - Clear subheadings for key sections (e.g., "What is {topic}?", "Why does it matter?").
-    - Relatable examples or scenarios where possible.
-    - Reference List.
+    A draft of an article (ideally 1,500+ words) that includes:
+    - An engaging introduction explaining {topic} and its relevance.
+    - Several subheadings for key sections (e.g., "Was ist {topic}?", 
+      "Aktuelle Entwicklungen", "Praktische Anwendungen").
+    - Specific data, facts, or anecdotes from the research summary to support claims.
+    - At least one real or hypothetical example showing how {topic} might be applied in practice.
+    - Bracketed citations throughout (e.g., [1], [2]) corresponding to a reference list.
+    - A properly formatted reference list at the end, consistent with the instructions above.
+
   agent: content_generator
