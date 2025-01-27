@@ -1,17 +1,9 @@
-# CrewaiEnterpriseContentMarketing Crew
+# Crewai Researcher and Writer Crew
 
-Welcome to the CrewaiEnterpriseContentMarketing Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
-
-## Goal
-The goal of this crew is to generate content ideas for a given topic and company.
-
-Our first agent is a researcher that will research the topic and company and provide a list of 10 bullet points containing the most relevant information about the topic, including emerging trends, competitor strategies, and potential KPIs for content.
-
-Then, our second agent is a content generator that will generate content ideas for the topic and company based on the research provided by the first agent.
+Welcome to the CrewaiResearcherAndWriter Crew project, provided by CrewAI and customized by digital@work. This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
 
 ## Update your crew inputs
-Inspect `crewai_enterprise_content_marketing_ideas/main.py` to see the inputs and how to customize the crew.
-
+Inspect `crewAI-researcher-and-writer/main.py` to see the inputs and how to customize the crew.
 
 ## Installation
 
